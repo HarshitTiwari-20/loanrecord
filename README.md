@@ -1,22 +1,18 @@
-# Soroban Project
+# Loan Record Smart Contract
 
-## Project Structure
+## Project Description
+A streamlined smart contract built on **Stellar** via **Soroban**. It is designed to manage all records of various loan transactions reliably on-chain. It establishes a verifiable, immutable history of financial agreements between lenders and borrowers.
 
-This repository uses the recommended structure for a Soroban project:
+## What it does
+It can manage the entire lifecycle of a loan giving and repayment transaction. Specifically, it allows a lender to issue a new loan with a set amount and an assigned borrower. From there, the borrower can securely submit partial or full repayments against that loan, and the contract automatically tracks the amount repaid, ensuring that the loan state flips to "inactive" once the principal amount is settled.
 
-```text
-.
-├── contracts
-│   └── hello_world
-│       ├── src
-│       │   ├── lib.rs
-│       │   └── test.rs
-│       └── Cargo.toml
-├── Cargo.toml
-└── README.md
-```
+## Features
+- **On-chain Initialization:** Lenders can create an immutable loan record assigned to a borrower.
+- **Secure Authentication:** `require_auth` ensures only the valid lender can initiate a loan, and only the specific borrower can make repayments.
+- **Dynamic Repayment Tracking:** Incrementally add repayments through multiple installments.
+- **Automatic Status Management:** Automatically flags a loan (`is_active: false`) when the `repaid` amount equals or exceeds the total loan `amount`.
+- **Querying Capability:** Anyone can fetch the full state of a specific loan ID at any time.
 
-- New Soroban contracts can be put in `contracts`, each in their own directory. There is already a `hello_world` contract in there to get you started.
-- If you initialized this project with any other example contracts via `--with-example`, those contracts will be in the `contracts` directory as well.
-- Contracts should have their own `Cargo.toml` files that rely on the top-level `Cargo.toml` workspace for their dependencies.
-- Frontend libraries can be added to the top-level directory as well. If you initialized this project with a frontend template via `--frontend-template` you will have those files already included.
+## Deployed Smart Contract Link
+
+**Explorer Link:** [Stellar Expert Testnet](https://stellar.expert/explorer/testnet/tx/6c0aae8600dba0ceb2e2335d9f285494790622ede7433cf2e208b93d6f071190)
