@@ -16,6 +16,7 @@ It can manage the entire lifecycle of a loan giving and repayment transaction. S
 ## Deployed Smart Contract Link
 <img width="1008" height="900" alt="Contract ScreenShort" src="https://github.com/HarshitTiwari-20/loanrecord/blob/main/stellar_contract.png" />
 
+<img width="1008" height="900" alt="Contract ScreenShort" src="https://github.com/HarshitTiwari-20/loanrecord/blob/main/stellar_contract_2.png" />
 
 
 **Explorer Link:** [Stellar Expert Testnet](https://stellar.expert/explorer/testnet/tx/6c0aae8600dba0ceb2e2335d9f285494790622ede7433cf2e208b93d6f071190)
