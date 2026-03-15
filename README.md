@@ -14,7 +14,7 @@ It can manage the entire lifecycle of a loan giving and repayment transaction. S
 - **Querying Capability:** Anyone can fetch the full state of a specific loan ID at any time.
 
 ## Deployed Smart Contract Link
-<img width="1008" height="900" alt="Dashboard Screenshot" src="https://github.com/HarshitTiwari-20/ />
+<img width="1008" height="900" alt="Contract ScreenShort" src="https://github.com/HarshitTiwari-20/loanrecord/blob/main/stellar_contract.png" />
 
 
 
